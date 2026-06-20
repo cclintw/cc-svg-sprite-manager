@@ -3,7 +3,7 @@
  * Plugin Name: CC SVG Sprite Manager
  * Plugin URI: https://plugin.cclin.cc/cc-svg-sprite-manager
  * Description: Manage SVG source icons and generate sprite files with SVG uploads, ID deduplication, shortcode support, and icon deletion.
- * Version: 3.6.1
+ * Version: 3.6.2
  * Requires at least: 6.6
  * Requires PHP: 8.0
  * Author: Chance Lin
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'CC_SVG_SPRITE_MANAGER_VERSION', '3.6.1' );
+define( 'CC_SVG_SPRITE_MANAGER_VERSION', '3.6.2' );
 define( 'CC_SVG_SPRITE_MANAGER_FILE', __FILE__ );
 define( 'CC_SVG_SPRITE_MANAGER_DIR', plugin_dir_path( __FILE__ ) );
 define( 'CC_SVG_SPRITE_MANAGER_SPRITE_FILENAME', 'cc-icons-sprite.svg' );
@@ -57,9 +57,9 @@ function cc_svg_sprite_manager_register_shortcode() {
  * Register the admin menu.
  */
 function cc_svg_sprite_manager_register_admin_menu() {
-	add_menu_page(
-		__( 'CC SVG Sprite', 'cc-svg-sprite-manager' ),
-		__( 'CC SVG Sprite', 'cc-svg-sprite-manager' ),
+	add_management_page(
+		__( 'CC SVG Sprite Manager', 'cc-svg-sprite-manager' ),
+		__( 'CC SVG Sprite Manager', 'cc-svg-sprite-manager' ),
 		'manage_options',
 		'cc-svg-sprite-manager',
 		'cc_svg_sprite_manager_page'
@@ -72,7 +72,7 @@ function cc_svg_sprite_manager_register_admin_menu() {
  * @param string $hook_suffix Current admin page hook.
  */
 function cc_svg_sprite_manager_enqueue_admin_assets( $hook_suffix ) {
-	if ( 'toplevel_page_cc-svg-sprite-manager' !== $hook_suffix ) {
+	if ( 'tools_page_cc-svg-sprite-manager' !== $hook_suffix ) {
 		return;
 	}
 
@@ -354,7 +354,7 @@ function cc_svg_sprite_manager_bulk_delete_icons() {
 
 	$icons = array_filter( array_map( 'cc_svg_sprite_manager_sanitize_symbol_id', $raw_icons ) );
 	if ( empty( $icons ) ) {
-		wp_safe_redirect( admin_url( 'admin.php?page=cc-svg-sprite-manager' ) );
+		wp_safe_redirect( admin_url( 'tools.php?page=cc-svg-sprite-manager' ) );
 		exit;
 	}
 
@@ -394,7 +394,7 @@ function cc_svg_sprite_manager_bulk_delete_icons() {
 		add_query_arg(
 			'deleted_count',
 			count( $icons ),
-			admin_url( 'admin.php?page=cc-svg-sprite-manager' )
+			admin_url( 'tools.php?page=cc-svg-sprite-manager' )
 		)
 	);
 	exit;
@@ -454,7 +454,7 @@ function cc_svg_sprite_manager_page() {
 	}
 
 	echo '<section class="cc-svg-section"><h2>' . esc_html__( 'Upload SVG Files', 'cc-svg-sprite-manager' ) . '</h2>';
-	echo '<form id="cc-svg-upload-form" method="post" enctype="multipart/form-data" action="' . esc_url( admin_url( 'admin.php?page=cc-svg-sprite-manager' ) ) . '">';
+	echo '<form id="cc-svg-upload-form" method="post" enctype="multipart/form-data" action="' . esc_url( admin_url( 'tools.php?page=cc-svg-sprite-manager' ) ) . '">';
 	wp_nonce_field( 'cc_svg_sprite_upload_action' );
 	echo '<input type="hidden" name="cc_svg_sprite_upload" value="1">';
 	echo '<p><input id="cc-svg-files" type="file" name="svg_files[]" required multiple accept=".svg,image/svg+xml" /></p>';

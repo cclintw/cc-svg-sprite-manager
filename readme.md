@@ -21,7 +21,7 @@ CC SVG Sprite Manager is a WordPress plugin for managing SVG source icons and ge
 ## Usage
 
 1. Activate the plugin.
-2. Open **CC SVG Sprite** in the WordPress admin menu.
+2. Open **Tools > CC SVG Sprite Manager** in the WordPress admin menu.
 3. Upload up to 100 SVG files.
 4. Use the generated `wp-content/themes/classic-x/assets/images/cc-icons-sprite.svg` from your theme, or use the `[icon]` shortcode.
 

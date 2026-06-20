@@ -21,7 +21,7 @@ CC SVG Sprite Manager 是用來管理 SVG icon source 並產生 SVG sprite 的 W
 ## 使用方式
 
 1. 啟用外掛。
-2. 到 WordPress 後台的 **CC SVG Sprite**。
+2. 到 WordPress 後台的 **工具 → CC SVG Sprite 管理**。
 3. 上傳 SVG 檔案，單次最多 100 個。
 4. 在 theme 讀取 `wp-content/themes/classic-x/assets/images/cc-icons-sprite.svg`，或使用 `[icon]` shortcode。
 

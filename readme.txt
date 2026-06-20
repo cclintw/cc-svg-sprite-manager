@@ -3,7 +3,7 @@ Contributors: Chance Lin
 Tags: SVG, sprite, icon, generator, upload
 Requires at least: 6.6
 Tested up to: 7.0
-Stable tag: 3.6.1
+Stable tag: 3.6.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,7 +29,7 @@ Manage source SVG icons in the plugin directory, generate `cc-icons-sprite.svg`,
 
 1. Upload plugin files to the `/wp-content/plugins/cc-svg-sprite-manager` directory.
 2. Activate through the 'Plugins' menu in WordPress.
-3. Go to 'CC SVG Sprite' in the admin menu.
+3. Go to 'Tools > CC SVG Sprite Manager' in the admin menu.
 4. Upload SVG files and choose how duplicate icon IDs should be handled.
 
 == Frequently Asked Questions ==
@@ -56,6 +56,10 @@ Use the `[icon]` shortcode, for example `[icon name="edit" class="icon icon--edi
 You can choose to overwrite, skip, or rename on conflict.
 
 == Changelog ==
+
+= 3.6.2 =
+* Moved the plugin page under the WordPress Tools menu.
+* Added the Traditional Chinese admin name `CC SVG Sprite 管理`.
 
 = 3.6.1 =
 * Added a plugin-local `assets/sprite/cc-icons-sprite.txt` file and synchronized it to the active theme.

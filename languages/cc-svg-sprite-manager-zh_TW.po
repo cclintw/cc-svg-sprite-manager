@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: CC SVG Sprite Manager 3.6.1\n"
+"Project-Id-Version: CC SVG Sprite Manager 3.6.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cc-svg-sprite-"
 "manager\n"
-"POT-Creation-Date: 2026-06-20T07:49:48+00:00\n"
+"POT-Creation-Date: 2026-06-20T08:18:59+00:00\n"
 "PO-Revision-Date: 2026-06-20 15:00+0800\n"
 "Last-Translator: Chance Lin <hello@cclin.cc>\n"
 "Language-Team: Traditional Chinese <zh_TW@li.org>\n"
@@ -16,10 +16,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Plugin Name of the plugin
-#: cc-svg-sprite-manager.php cc-svg-sprite-manager.php:439
+#: cc-svg-sprite-manager.php cc-svg-sprite-manager.php:61
+#: cc-svg-sprite-manager.php:62 cc-svg-sprite-manager.php:439
 #: includes/view-details.php:60
 msgid "CC SVG Sprite Manager"
-msgstr "CC SVG Sprite Manager"
+msgstr "CC SVG Sprite 管理"
 
 #. Plugin URI of the plugin
 #: cc-svg-sprite-manager.php
@@ -44,10 +45,6 @@ msgstr "Chance Lin"
 #: cc-svg-sprite-manager.php
 msgid "https://cclin.cc"
 msgstr "https://cclin.cc"
-
-#: cc-svg-sprite-manager.php:61 cc-svg-sprite-manager.php:62
-msgid "CC SVG Sprite"
-msgstr "CC SVG Sprite"
 
 #: cc-svg-sprite-manager.php:103
 msgid "Only valid SVG files can be uploaded."
