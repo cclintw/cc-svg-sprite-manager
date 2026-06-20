@@ -1,0 +1,341 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CC SVG Sprite Manager 3.6.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cc-svg-sprite-"
+"manager\n"
+"POT-Creation-Date: 2026-06-20T07:49:48+00:00\n"
+"PO-Revision-Date: 2026-06-20 15:00+0800\n"
+"Last-Translator: Chance Lin <hello@cclin.cc>\n"
+"Language-Team: Traditional Chinese <zh_TW@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Codex\n"
+"X-Domain: cc-svg-sprite-manager\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Plugin Name of the plugin
+#: cc-svg-sprite-manager.php cc-svg-sprite-manager.php:439
+#: includes/view-details.php:60
+msgid "CC SVG Sprite Manager"
+msgstr "CC SVG Sprite Manager"
+
+#. Plugin URI of the plugin
+#: cc-svg-sprite-manager.php
+msgid "https://plugin.cclin.cc/cc-svg-sprite-manager"
+msgstr "https://plugin.cclin.cc/cc-svg-sprite-manager"
+
+#. Description of the plugin
+#: cc-svg-sprite-manager.php
+msgid ""
+"Manage SVG source icons and generate sprite files with SVG uploads, ID "
+"deduplication, shortcode support, and icon deletion."
+msgstr ""
+"管理 SVG source icon，透過 SVG 上傳產生 sprite 檔，支援 ID 去重、shortcode "
+"與 icon 刪除。"
+
+#. Author of the plugin
+#: cc-svg-sprite-manager.php
+msgid "Chance Lin"
+msgstr "Chance Lin"
+
+#. Author URI of the plugin
+#: cc-svg-sprite-manager.php
+msgid "https://cclin.cc"
+msgstr "https://cclin.cc"
+
+#: cc-svg-sprite-manager.php:61 cc-svg-sprite-manager.php:62
+msgid "CC SVG Sprite"
+msgstr "CC SVG Sprite"
+
+#: cc-svg-sprite-manager.php:103
+msgid "Only valid SVG files can be uploaded."
+msgstr "只能上傳有效的 SVG 檔案。"
+
+#. translators: %d: maximum number of SVG files.
+#: cc-svg-sprite-manager.php:106 cc-svg-sprite-manager.php:428
+#, php-format
+msgid "You can upload a maximum of %d SVG files at a time."
+msgstr "單次最多可上傳 %d 個 SVG 檔。"
+
+#: cc-svg-sprite-manager.php:109
+msgid "Validating SVG files..."
+msgstr "正在檢查 SVG 檔案……"
+
+#: cc-svg-sprite-manager.php:110
+msgid "Uploading SVG files..."
+msgstr "正在上傳 SVG 檔案……"
+
+#: cc-svg-sprite-manager.php:111
+msgid "The SVG upload failed."
+msgstr "SVG 上傳失敗。"
+
+#: cc-svg-sprite-manager.php:112
+msgid "Upload complete. Refreshing the icon list..."
+msgstr "上傳完成，正在重新整理 icon 清單……"
+
+#: cc-svg-sprite-manager.php:113 cc-svg-sprite-manager.php:537
+msgid "Select All"
+msgstr "全選"
+
+#: cc-svg-sprite-manager.php:114
+msgid "Deselect All"
+msgstr "取消全選"
+
+#: cc-svg-sprite-manager.php:124 cc-svg-sprite-manager.php:345
+#: cc-svg-sprite-manager.php:408
+msgid "Insufficient permissions."
+msgstr "權限不足。"
+
+#: cc-svg-sprite-manager.php:130 cc-svg-sprite-manager.php:419
+msgid ""
+"No upload files were received. Check the selected file and the server upload "
+"size limits."
+msgstr "沒有收到上傳檔案。請檢查已選檔案與伺服器上傳大小限制。"
+
+#: cc-svg-sprite-manager.php:135
+msgid "The upload batch contains too many files."
+msgstr "此上傳批次包含過多檔案。"
+
+#: cc-svg-sprite-manager.php:185
+msgid "Unable to write plugin cc-icons-sprite.txt."
+msgstr "無法寫入外掛的 cc-icons-sprite.txt。"
+
+#. translators: %s: directory path.
+#: cc-svg-sprite-manager.php:197
+#, php-format
+msgid "The theme assets directory is not writable: %s"
+msgstr "Theme assets 目錄不可寫入：%s"
+
+#: cc-svg-sprite-manager.php:204
+msgid "Unable to copy cc-icons-sprite.svg to the theme assets directory."
+msgstr "無法將 cc-icons-sprite.svg 複製到 theme assets 目錄。"
+
+#: cc-svg-sprite-manager.php:208
+msgid "Unable to copy cc-icons-sprite.txt to the theme assets directory."
+msgstr "無法將 cc-icons-sprite.txt 複製到 theme assets 目錄。"
+
+#: cc-svg-sprite-manager.php:365 cc-svg-sprite-manager.php:493
+msgid "cc-icons-sprite.svg not found."
+msgstr "找不到 cc-icons-sprite.svg。"
+
+#: cc-svg-sprite-manager.php:370 cc-svg-sprite-manager.php:499
+msgid "Unable to read cc-icons-sprite.svg."
+msgstr "無法讀取 cc-icons-sprite.svg。"
+
+#: cc-svg-sprite-manager.php:383
+msgid "Unable to update plugin cc-icons-sprite.svg after deleting icons."
+msgstr "刪除 icon 後無法更新外掛的 cc-icons-sprite.svg。"
+
+#: cc-svg-sprite-manager.php:417
+msgid ""
+"Upload request could not be verified. Please reload the page and try again."
+msgstr "無法驗證上傳請求。請重新整理頁面後再試一次。"
+
+#. translators: %d: deleted icon count.
+#: cc-svg-sprite-manager.php:449
+#, php-format
+msgid "%d icon deleted."
+msgid_plural "%d icons deleted."
+msgstr[0] "已刪除 %d 個 icon。"
+
+#: cc-svg-sprite-manager.php:456
+msgid "Upload SVG Files"
+msgstr "上傳 SVG 檔案"
+
+#: cc-svg-sprite-manager.php:461
+msgid ""
+"Only SVG files are supported. You can upload a maximum of 100 SVG files at a "
+"time."
+msgstr "僅支援 SVG 檔案，單次最多上傳 100 個 SVG 檔。"
+
+#: cc-svg-sprite-manager.php:462
+msgid "Duplicate Icon IDs:"
+msgstr "重複 Icon ID："
+
+#: cc-svg-sprite-manager.php:463
+msgid "Overwrite"
+msgstr "覆蓋"
+
+#: cc-svg-sprite-manager.php:464
+msgid "Skip"
+msgstr "略過"
+
+#: cc-svg-sprite-manager.php:465
+msgid "Add as New"
+msgstr "另存新檔"
+
+#: cc-svg-sprite-manager.php:466
+msgid "Upload"
+msgstr "上傳"
+
+#: cc-svg-sprite-manager.php:506
+msgid "No icons found."
+msgstr "找不到 icon。"
+
+#: cc-svg-sprite-manager.php:516
+msgid "Icon List"
+msgstr "Icon 清單"
+
+#: cc-svg-sprite-manager.php:520
+msgid "icons"
+msgstr "icons"
+
+#: cc-svg-sprite-manager.php:538
+msgid "Delete selected?"
+msgstr "刪除選取項目？"
+
+#: cc-svg-sprite-manager.php:538
+msgid "Delete Selected"
+msgstr "刪除選取項目"
+
+#: cc-svg-sprite-manager.php:557
+msgid "No upload files found."
+msgstr "找不到上傳檔案。"
+
+#: cc-svg-sprite-manager.php:567
+msgid "Unable to create a temporary upload directory."
+msgstr "無法建立暫存上傳目錄。"
+
+#. translators: 1: file name, 2: error message.
+#: cc-svg-sprite-manager.php:579
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s：%2$s"
+
+#: cc-svg-sprite-manager.php:592
+msgid "No valid SVG files were found."
+msgstr "找不到有效的 SVG 檔案。"
+
+#: cc-svg-sprite-manager.php:613
+msgid "Unable to write plugin cc-icons-sprite.svg."
+msgstr "無法寫入外掛的 cc-icons-sprite.svg。"
+
+#. translators: 1: saved SVG count, 2: new SVG count, 3: updated SVG count, 4: renamed SVG count, 5: skipped SVG count, 6: total icon count.
+#: cc-svg-sprite-manager.php:629
+#, php-format
+msgid ""
+"cc-icons-sprite.svg updated. Saved: %1$d. New: %2$d. Updated: %3$d. Renamed: "
+"%4$d. Skipped: %5$d. Total icons: %6$d."
+msgstr ""
+"cc-icons-sprite.svg 已更新。已儲存：%1$d。新增：%2$d。更新：%3$d。重新命名："
+"%4$d。略過：%5$d。Icon 總數：%6$d。"
+
+#: cc-svg-sprite-manager.php:684
+msgid "No upload file selected."
+msgstr "尚未選擇上傳檔案。"
+
+#: cc-svg-sprite-manager.php:695
+msgid "Invalid uploaded file."
+msgstr "上傳檔案無效。"
+
+#: cc-svg-sprite-manager.php:699
+msgid "Only SVG files are supported."
+msgstr "僅支援 SVG 檔案。"
+
+#: cc-svg-sprite-manager.php:704
+msgid "The uploaded SVG file is invalid."
+msgstr "上傳的 SVG 檔案無效。"
+
+#: cc-svg-sprite-manager.php:708
+msgid "Unable to save the uploaded SVG to the temporary directory."
+msgstr "無法將上傳的 SVG 儲存到暫存目錄。"
+
+#: cc-svg-sprite-manager.php:727
+msgid "Unable to create the source SVG icon directory."
+msgstr "無法建立 source SVG icon 目錄。"
+
+#: cc-svg-sprite-manager.php:770
+msgid "Unable to save the source SVG icon."
+msgstr "無法儲存 source SVG icon。"
+
+#: cc-svg-sprite-manager.php:785
+msgid "All uploaded SVG icons already existed and were skipped."
+msgstr "所有上傳的 SVG icon 都已存在並已略過。"
+
+#: cc-svg-sprite-manager.php:788
+msgid "No source SVG icons were saved."
+msgstr "沒有儲存任何 source SVG icon。"
+
+#. translators: %s: directory path.
+#: cc-svg-sprite-manager.php:834
+#, php-format
+msgid "Unable to create directory: %s"
+msgstr "無法建立目錄：%s"
+
+#. translators: %s: directory path.
+#: cc-svg-sprite-manager.php:845
+#, php-format
+msgid "Directory is not writable: %s"
+msgstr "目錄不可寫入：%s"
+
+#. translators: 1: error message, 2: directory path.
+#: cc-svg-sprite-manager.php:871
+#, php-format
+msgid "%1$s Directory could not be created: %2$s"
+msgstr "%1$s 無法建立目錄：%2$s"
+
+#. translators: 1: error message, 2: directory path.
+#: cc-svg-sprite-manager.php:883
+#, php-format
+msgid "%1$s Directory is not writable: %2$s"
+msgstr "%1$s 目錄不可寫入：%2$s"
+
+#. translators: 1: error message, 2: file path.
+#: cc-svg-sprite-manager.php:896
+#, php-format
+msgid "%1$s File could not be written: %2$s"
+msgstr "%1$s 無法寫入檔案：%2$s"
+
+#: cc-svg-sprite-manager.php:916
+msgid "The uploaded file exceeds the allowed upload size."
+msgstr "上傳檔案超過允許大小。"
+
+#: cc-svg-sprite-manager.php:918
+msgid "The uploaded file was only partially uploaded."
+msgstr "上傳檔案只有部分上傳成功。"
+
+#: cc-svg-sprite-manager.php:920
+msgid "The server is missing a temporary upload directory."
+msgstr "伺服器缺少暫存上傳目錄。"
+
+#: cc-svg-sprite-manager.php:922
+msgid "The server failed to write the uploaded file to disk."
+msgstr "伺服器無法將上傳檔案寫入磁碟。"
+
+#: cc-svg-sprite-manager.php:924
+msgid "A PHP extension stopped the upload."
+msgstr "PHP extension 中止了上傳。"
+
+#: cc-svg-sprite-manager.php:926
+msgid "A file upload failed."
+msgstr "檔案上傳失敗。"
+
+#: includes/view-details.php:33
+msgid "View CC SVG Sprite Manager details"
+msgstr "檢視 CC SVG Sprite Manager 詳細資訊"
+
+#: includes/view-details.php:34
+msgid "View Details"
+msgstr "檢視詳細資訊"
+
+#: includes/view-details.php:61
+msgid ""
+"Upload validated SVG icons, generate cc-icons-sprite.svg in the plugin "
+"directory, and keep a copy in the active theme assets/images directory."
+msgstr ""
+"上傳通過檢查的 SVG icon，在外掛目錄產生 cc-icons-sprite.svg，並保留一份到目"
+"前 theme 的 assets/images 目錄。"
+
+#: includes/view-details.php:63
+msgid "Supports up to 100 validated SVG files per selection."
+msgstr "每次選取最多支援 100 個通過檢查的 SVG 檔。"
+
+#: includes/view-details.php:64
+msgid "Keeps uploaded source SVG files in the plugin icon directory."
+msgstr "將上傳的 source SVG 檔保存在外掛 icon 目錄。"
+
+#: includes/view-details.php:65
+msgid "Uses filename-based icon IDs with overwrite, skip, or rename handling."
+msgstr "使用檔名作為 icon ID，並支援覆蓋、略過或重新命名。"

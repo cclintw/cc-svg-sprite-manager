@@ -1,0 +1,332 @@
+# Copyright (C) 2026 Chance Lin
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CC SVG Sprite Manager 3.6.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cc-svg-sprite-manager\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-20T07:49:48+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: cc-svg-sprite-manager\n"
+
+#. Plugin Name of the plugin
+#: cc-svg-sprite-manager.php
+#: cc-svg-sprite-manager.php:439
+#: includes/view-details.php:60
+msgid "CC SVG Sprite Manager"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: cc-svg-sprite-manager.php
+msgid "https://plugin.cclin.cc/cc-svg-sprite-manager"
+msgstr ""
+
+#. Description of the plugin
+#: cc-svg-sprite-manager.php
+msgid "Manage SVG source icons and generate sprite files with SVG uploads, ID deduplication, shortcode support, and icon deletion."
+msgstr ""
+
+#. Author of the plugin
+#: cc-svg-sprite-manager.php
+msgid "Chance Lin"
+msgstr ""
+
+#. Author URI of the plugin
+#: cc-svg-sprite-manager.php
+msgid "https://cclin.cc"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:61
+#: cc-svg-sprite-manager.php:62
+msgid "CC SVG Sprite"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:103
+msgid "Only valid SVG files can be uploaded."
+msgstr ""
+
+#. translators: %d: maximum number of SVG files.
+#: cc-svg-sprite-manager.php:106
+#: cc-svg-sprite-manager.php:428
+#, php-format
+msgid "You can upload a maximum of %d SVG files at a time."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:109
+msgid "Validating SVG files..."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:110
+msgid "Uploading SVG files..."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:111
+msgid "The SVG upload failed."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:112
+msgid "Upload complete. Refreshing the icon list..."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:113
+#: cc-svg-sprite-manager.php:537
+msgid "Select All"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:114
+msgid "Deselect All"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:124
+#: cc-svg-sprite-manager.php:345
+#: cc-svg-sprite-manager.php:408
+msgid "Insufficient permissions."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:130
+#: cc-svg-sprite-manager.php:419
+msgid "No upload files were received. Check the selected file and the server upload size limits."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:135
+msgid "The upload batch contains too many files."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:185
+msgid "Unable to write plugin cc-icons-sprite.txt."
+msgstr ""
+
+#. translators: %s: directory path.
+#: cc-svg-sprite-manager.php:197
+#, php-format
+msgid "The theme assets directory is not writable: %s"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:204
+msgid "Unable to copy cc-icons-sprite.svg to the theme assets directory."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:208
+msgid "Unable to copy cc-icons-sprite.txt to the theme assets directory."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:365
+#: cc-svg-sprite-manager.php:493
+msgid "cc-icons-sprite.svg not found."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:370
+#: cc-svg-sprite-manager.php:499
+msgid "Unable to read cc-icons-sprite.svg."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:383
+msgid "Unable to update plugin cc-icons-sprite.svg after deleting icons."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:417
+msgid "Upload request could not be verified. Please reload the page and try again."
+msgstr ""
+
+#. translators: %d: deleted icon count.
+#: cc-svg-sprite-manager.php:449
+#, php-format
+msgid "%d icon deleted."
+msgid_plural "%d icons deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: cc-svg-sprite-manager.php:456
+msgid "Upload SVG Files"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:461
+msgid "Only SVG files are supported. You can upload a maximum of 100 SVG files at a time."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:462
+msgid "Duplicate Icon IDs:"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:463
+msgid "Overwrite"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:464
+msgid "Skip"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:465
+msgid "Add as New"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:466
+msgid "Upload"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:506
+msgid "No icons found."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:516
+msgid "Icon List"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:520
+msgid "icons"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:538
+msgid "Delete selected?"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:538
+msgid "Delete Selected"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:557
+msgid "No upload files found."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:567
+msgid "Unable to create a temporary upload directory."
+msgstr ""
+
+#. translators: 1: file name, 2: error message.
+#: cc-svg-sprite-manager.php:579
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:592
+msgid "No valid SVG files were found."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:613
+msgid "Unable to write plugin cc-icons-sprite.svg."
+msgstr ""
+
+#. translators: 1: saved SVG count, 2: new SVG count, 3: updated SVG count, 4: renamed SVG count, 5: skipped SVG count, 6: total icon count.
+#: cc-svg-sprite-manager.php:629
+#, php-format
+msgid "cc-icons-sprite.svg updated. Saved: %1$d. New: %2$d. Updated: %3$d. Renamed: %4$d. Skipped: %5$d. Total icons: %6$d."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:684
+msgid "No upload file selected."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:695
+msgid "Invalid uploaded file."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:699
+msgid "Only SVG files are supported."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:704
+msgid "The uploaded SVG file is invalid."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:708
+msgid "Unable to save the uploaded SVG to the temporary directory."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:727
+msgid "Unable to create the source SVG icon directory."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:770
+msgid "Unable to save the source SVG icon."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:785
+msgid "All uploaded SVG icons already existed and were skipped."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:788
+msgid "No source SVG icons were saved."
+msgstr ""
+
+#. translators: %s: directory path.
+#: cc-svg-sprite-manager.php:834
+#, php-format
+msgid "Unable to create directory: %s"
+msgstr ""
+
+#. translators: %s: directory path.
+#: cc-svg-sprite-manager.php:845
+#, php-format
+msgid "Directory is not writable: %s"
+msgstr ""
+
+#. translators: 1: error message, 2: directory path.
+#: cc-svg-sprite-manager.php:871
+#, php-format
+msgid "%1$s Directory could not be created: %2$s"
+msgstr ""
+
+#. translators: 1: error message, 2: directory path.
+#: cc-svg-sprite-manager.php:883
+#, php-format
+msgid "%1$s Directory is not writable: %2$s"
+msgstr ""
+
+#. translators: 1: error message, 2: file path.
+#: cc-svg-sprite-manager.php:896
+#, php-format
+msgid "%1$s File could not be written: %2$s"
+msgstr ""
+
+#: cc-svg-sprite-manager.php:916
+msgid "The uploaded file exceeds the allowed upload size."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:918
+msgid "The uploaded file was only partially uploaded."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:920
+msgid "The server is missing a temporary upload directory."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:922
+msgid "The server failed to write the uploaded file to disk."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:924
+msgid "A PHP extension stopped the upload."
+msgstr ""
+
+#: cc-svg-sprite-manager.php:926
+msgid "A file upload failed."
+msgstr ""
+
+#: includes/view-details.php:33
+msgid "View CC SVG Sprite Manager details"
+msgstr ""
+
+#: includes/view-details.php:34
+msgid "View Details"
+msgstr ""
+
+#: includes/view-details.php:61
+msgid "Upload validated SVG icons, generate cc-icons-sprite.svg in the plugin directory, and keep a copy in the active theme assets/images directory."
+msgstr ""
+
+#: includes/view-details.php:63
+msgid "Supports up to 100 validated SVG files per selection."
+msgstr ""
+
+#: includes/view-details.php:64
+msgid "Keeps uploaded source SVG files in the plugin icon directory."
+msgstr ""
+
+#: includes/view-details.php:65
+msgid "Uses filename-based icon IDs with overwrite, skip, or rename handling."
+msgstr ""

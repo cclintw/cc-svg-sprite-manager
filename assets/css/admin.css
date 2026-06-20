@@ -1,0 +1,63 @@
+.cc-svg-sprite-manager .cc-svg-section h2,
+.cc-svg-sprite-manager > h2 {
+	margin-top: 20px;
+}
+
+.cc-svg-duplicate-options {
+	min-width: 0;
+	margin: 20px 0;
+	padding: 0;
+	border: 0;
+}
+
+.cc-svg-duplicate-options legend {
+	margin-bottom: 8px;
+	padding: 0;
+	font-weight: 600;
+}
+
+.cc-svg-duplicate-options label {
+	display: inline-block;
+	margin: 0 20px 8px 0;
+}
+
+.cc-svg-section-divider {
+	margin: 28px 0 24px;
+	border: 0;
+	border-top: 1px solid #dcdcde;
+}
+
+.cc-svg-icon-grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 0 24px;
+	margin: 16px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.cc-svg-icon-item {
+	display: flex;
+	align-items: center;
+	min-width: 0;
+	margin-bottom: 10px;
+}
+
+.cc-svg-sprite-manager .button {
+	min-height: 32px;
+	padding-right: 14px;
+	padding-left: 14px;
+	border-radius: 3px;
+	box-shadow: none;
+	line-height: 30px;
+}
+
+.cc-svg-list-actions .button + .button {
+	margin-left: 8px;
+}
+
+@media screen and (max-width: 960px) {
+	.cc-svg-icon-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
