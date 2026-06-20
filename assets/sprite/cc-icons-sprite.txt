@@ -1,5 +1,5 @@
 CC SVG Sprite Manager
-Generated: 2026-06-20 07:53:26 UTC
+Generated: 2026-06-20 08:01:30 UTC
 
 中文說明
 這個檔案由 CC SVG Sprite Manager 自動產生，提供 theme 使用 SVG sprite 的基本資訊。Theme hook 會在檔案存在時讀取 assets/images/cc-icons-sprite.svg，並在 wp_footer inline 輸出。
